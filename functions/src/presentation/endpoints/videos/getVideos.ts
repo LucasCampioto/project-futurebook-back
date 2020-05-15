@@ -7,7 +7,6 @@ export const getVideos = async (req: Request, res: Response) => {
         const getvideoDB = new GetVideosDB();
         const getVideoUC = new GetVideosUC(getvideoDB);
         const videos = await  getVideoUC.execute();
-        
         res.status(200).send({
             message:"sucesso",
             videos,
@@ -15,5 +14,4 @@ export const getVideos = async (req: Request, res: Response) => {
     }catch(err){
         res.status(400).send(err.message)
     }
-
 }

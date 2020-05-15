@@ -11,10 +11,8 @@ export const changeVideos = async (req: Request, res: Response) => {
             description: req.body.description,
             videoId: req.params.videoId
         }
-        
         await sendVideoUC.execute(input);
         res.status(200).send("video alterado com sucesso")
-
    }catch(err){
        res.status(400).send(err.message)
    }

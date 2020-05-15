@@ -1,6 +1,5 @@
 import * as admin from "firebase-admin";
 
-
 export class GetVideosDB {
     async getVideos(): Promise<any> {
         const videoRef = admin.firestore().collection('sendVideo');

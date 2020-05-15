@@ -1,6 +1,5 @@
 import {SendVideoGateway} from '../gateway/sendVideoGateway';
 
-
 export class SendVideoUC {
         constructor(
         private sendVideoGateway: SendVideoGateway
@@ -11,11 +10,9 @@ export class SendVideoUC {
     }
 }
 
-
 export interface SendVideoUCInput {
     url: string,
     title: string,
     description: string,
-    videoId: string,
-    
+    videoId: string,   
 }

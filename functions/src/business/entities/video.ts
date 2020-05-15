@@ -7,8 +7,6 @@ export class Video{
         private id: string, 
      
     ){}
-
- 
     
    public getId():string{
         return this.id
@@ -18,7 +16,6 @@ export class Video{
         return this.url
     }
 
-    
    public getTitle() : string{
         return this.title
     }

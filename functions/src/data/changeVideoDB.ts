@@ -1,5 +1,4 @@
 import * as admin from "firebase-admin";
-
 import {ChangeVideoGateway} from '../business/gateway/changeVideoGateway';
 
 export class ChangeVideoDB implements ChangeVideoGateway {

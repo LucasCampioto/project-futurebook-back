@@ -4,7 +4,6 @@ import * as admin from "firebase-admin";
 
 export class GetVideoByUserIdDB implements GetVideosDetailsGateway{
     async getVideosByUserId(userId:string):Promise<Video[]>{
-       
             const verifyToken = await admin.auth().verifyIdToken(userId)
             const userToken = verifyToken.uid
             const result = await admin.firestore().collection('sendVideos')

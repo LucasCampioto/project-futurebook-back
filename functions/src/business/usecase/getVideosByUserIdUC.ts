@@ -5,7 +5,6 @@ export class GetVideosByUserIdUC{
     constructor( private db: GetVideosDetailsGateway){}
   
     public async execute( input:GetVideosByUserIdInput ): Promise<GetVideosByUserIdOutput>{
-     
         const result = await this.db.getVideosByUserId( input.userId )
   
         return ( {
